@@ -1,0 +1,147 @@
+.expense-list{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 18px 18px rgba(154, 44, 44, 0.12);
+}
+
+.expense-list h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.expense-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8fafc;
+    padding:15px;
+    margin-bottom:18px;
+    border-radius:15px;
+    transition:.3s;
+    border-left:6px solid royalblue;
+}
+
+.expense-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+}
+
+.expense-left{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.expense-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+}
+
+.expense-details h3{
+    margin:0;
+    font-size:20px;
+}
+
+.expense-details p{
+    margin:6px 0;
+    color:#555;
+}
+
+.expense-details span{
+    color:#888;
+    font-size:14px;
+}
+
+.expense-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.expense-right h2{
+    color:#2563eb;
+    margin-top: 20px;
+    font-size:25px;
+}
+
+.btn-group{
+    display:flex;
+    gap:10px;
+}
+
+.edit-btn,
+.delete-btn,
+.save-btn{
+
+border:none;
+
+padding:10px 14px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-size:16px;
+
+}
+
+.edit-btn{
+
+background:#0c0b0b;
+
+color:white;
+width: 70px;
+
+}
+
+.delete-btn{
+
+background:red;
+
+color:white;
+
+}
+
+.save-btn{
+
+background:#10b981;
+
+color:white;
+
+}
+
+.edit-form{
+
+display:flex;
+
+gap:10px;
+
+width:100%;
+
+}
+
+.edit-form input{
+
+padding:10px;
+
+flex:1;
+
+}
+
+.empty{
+
+text-align:center;
+
+padding:30px;
+
+color:gray;
+
+}

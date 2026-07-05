@@ -1,0 +1,46 @@
+.form-container{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.form-container h2{
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.form-container input,
+.form-container select{
+
+width:100%;
+
+padding:12px;
+
+margin-bottom:15px;
+
+}
+
+.form-container button{
+
+width:100%;
+
+padding:12px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:8px;
+
+}

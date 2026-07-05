@@ -1,0 +1,73 @@
+*{
+    margin: 0%;
+}
+
+.dashboard-container{
+    max-width:1400px;
+    margin:20px auto;
+    padding:20px;
+}
+
+/* Two-column layout */
+.main-layout{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:30px;
+    align-items:start;
+    margin-top:30px;
+}
+
+/* Left Panel */
+.left-panel{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+/* Right Panel */
+.right-panel{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* Dashboard Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.card h2{
+    color:#2563eb;
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+.main-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+}
