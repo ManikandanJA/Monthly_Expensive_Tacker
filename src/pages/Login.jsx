@@ -1,65 +1,21 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "../styles/Login.css";
-import { useAuth } from "../context/AuthContext";
 
 function Login() {
+  const [name, setName] = useState("");
 
-  const [username, setUsername] = useState("");
-
-  const navigate = useNavigate();
-
-  const { login } = useAuth();
-
-  const handleLogin = (e) => {
-
-    e.preventDefault();
-
-    if (username.trim() === "") {
-
-      alert("Enter Username");
-
-      return;
-
-    }
-
-    login(username);
-
-    navigate("/dashboard");
-
+  const login = () => {
+    localStorage.setItem("user", name);
+    alert("Logged in");
   };
 
   return (
-  <div className="login-page">
+    <div className="booking">
+      <h2>Login</h2>
 
-    <form
-      className="login-box"
-      onSubmit={handleLogin}
-    >
-
-      <div className="avatar">
-        👤
-      </div>
-
-      <h1>Smart Expense Tracker</h1>
-
-      <p>Track your monthly expenses easily</p>
-
-      <input
-        type="text"
-        placeholder="Enter Username"
-        value={username}
-        onChange={(e)=>setUsername(e.target.value)}
-      />
-
-      <button type="submit">
-        Login
-      </button>
-
-    </form>
-
-  </div>
-);
+      <input onChange={(e) => setName(e.target.value)} />
+      <button onClick={login}>Login</button>
+    </div>
+  );
 }
 
 export default Login;
